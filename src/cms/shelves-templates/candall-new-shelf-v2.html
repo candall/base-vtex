@@ -1,0 +1,37 @@
+#set($id = $product.Id)
+#set($idSku = $product.productVariantId)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+
+<div class="shelf-structure-v2" data-id="$id">
+    <a class="shelf-product-image" title="$escapedName" href="$uri">
+        $product.GetImageTag(2)
+    </a>
+
+    <h3 class="shlef-title">
+        <a title="$escapedName" href="$uri">
+            $product.Name
+        </a>
+    </h3>
+
+    #if ($product.IsInStock)
+        <div class="shelf-price">
+            <a title="$escapedName" href="$uri">
+                <span class="installment">
+                    <!--Parcelamento-->
+                    #if ($product.NumbersOfInstallment > 1)
+                    em até <span> ${product.NumbersOfInstallment}x </span> de <span> $product.InstallmentValue </span>
+                    #end
+                </span>
+
+                <span class="bestPrice">
+                    ou <strong>$product.BestPrice</strong> à vista
+                </span>
+            </a>
+        </div>
+
+        <a href="$uri" class="shelf-link">detalhes</a>
+    #else
+        <p class="shelf-outOfStock">Produto Esgotado</p>
+    #end
+</div>

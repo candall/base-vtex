@@ -1,0 +1,378 @@
+header {
+    .header-content {
+        border-bottom: solid 1px #f3f3f3;
+        min-height: 81px;
+    }
+
+    .header-call-menu,
+    .header-call-menu-mobile {
+        color: #4f5264;
+        margin-top: 32px;
+        cursor: pointer;
+
+        span {
+            display: block;
+
+            &:before {
+                content: "";
+                background: url("/arquivos/candall-new-sprite.png") no-repeat -17px -5px;
+                width: 25px;
+                height: 13px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .header-account {
+        float: left;
+        width: 50%;
+        text-align: center;
+        margin-top: 25px;
+
+        a {
+            display: block;
+            color: #747474;
+            text-decoration: none;
+
+            &:before {
+                content: "";
+                background: url("/arquivos/candall-new-sprite.png") no-repeat -23px -32px;
+                width: 14px;
+                height: 16px;
+                display: block;
+                margin: 0 auto 5px;
+            }
+        }
+    }
+
+    .header-attendance {
+        float: left;
+        width: 50%;
+        text-align: center;
+        margin-top: 25px;
+
+        a {
+            display: block;
+            color: #747474;
+            text-decoration: none;
+
+            &:before {
+                content: "";
+                background: url(/arquivos/candall-new-sprite.png) no-repeat -22px -62px;
+                width: 16px;
+                height: 16px;
+                display: block;
+                margin: 0 auto 5px;
+            }
+        }
+    }
+
+    .nav-logo {
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .header-search-box {
+        margin-top: 18px;
+        float: left;
+        width: 74%;
+
+        @media (max-width: 991px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .busca {
+            legend, label, select {
+                display: none !important;
+            }
+        }
+
+        fieldset {
+            position: relative;
+
+            .fulltext-search-box {
+                border: 1px solid #dcdcdc;
+                font-size: 14px;
+                color: #b1b2ba;
+                height: 44px;
+                width: 100%;
+                border-radius: 5px;
+                padding-left: 10px;
+                font-weight: 100;
+            }
+
+            .btn-buscar {
+                position: absolute;
+                background: url(/arquivos/candall-new-sprite.png) no-repeat center -231px transparent;
+                width: 40px;
+                border: none;
+                font-size: 0;
+                padding: 0;
+                display: block;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                height: 44px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .header-cart {
+        margin-top: 18px;
+        float: left;
+        width: 21%;
+        margin-left: 5%;
+
+        @media (max-width: 991px) {
+            width: 100%;
+
+            a {
+                float: right;
+            }
+        }
+
+        a {
+            width: 65px;
+            height: 44px;
+            background: #a3d02a;
+            display: block;
+            line-height: 44px;
+            text-align: center;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+
+            .portal-totalizers-ref {
+                .cart-info {
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+                }
+
+                .title,
+                .amount-items,
+                .amount-kits,
+                .total-cart {
+                    display: none !important;
+                }
+
+                .amount-products {
+                    strong {
+                        display: none;
+                    }
+
+                    .amount-products-em {
+                        font-style: normal;
+                        font-size: 14px;
+                        font-weight: 500;
+                        display: block;
+
+                        &:before {
+                            content: "";
+                            background: url(/arquivos/candall-new-sprite.png) no-repeat -21px -92px;
+                            width: 18px;
+                            height: 19px;
+                            display: inline-block;
+                            position: relative;
+                            left: -1px;
+                            top: 4px;
+                            margin-right: 9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header-menu-content {
+        box-shadow: 0px 10px 20px 0px #b7b7b78a;
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        z-index: 9;
+
+        @media (max-width: 767px) {
+            display: none !important;
+        }
+
+        @media (max-width: 991px) and (min-width: 768px) {
+            display: none !important;
+        }
+
+        .menu-departamento {
+            display: none;
+        }
+
+        .wrapper-menu {
+            display: table;
+            width: 100%;
+            min-height: 240px;
+
+            .menu-item {
+                width: 25%;
+                border-left: solid 1px #eae9ec;
+                border-top: none;
+                border-bottom: none;
+                height: 100%;
+                display: table-cell;
+                vertical-align: top;
+                padding: 25px 30px;
+
+                &:first-child {
+                    border-left: none;
+                    padding-left: 0;
+                }
+
+                h3 {
+                    font-size: 14px;
+                    margin: 0 0 2px;
+                    color: #4f5264;
+
+                    a {
+                        color: #4f5264;
+                        text-decoration: none;
+                        transition: all .2s ease-out;
+
+                        &:hover {
+                            color: #aaa9af;
+                        }
+                    }
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0 0 30px;
+                    list-style-type: none;
+
+                    li {
+                        line-height: 1.3;
+
+                        a {
+                            color: #4f5264;
+                            text-decoration: none;
+                            font-weight: 100;
+                            display: block;
+                            transition: all .2s ease-out;
+
+                            &:hover {
+                                color: #aaa9af;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .box-banner {
+            padding: 10px 0;
+
+            a {
+                display: block;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .header-menu-content-mobile {
+        display: none;
+        overflow: auto !important;
+        max-height: 300px;
+        box-shadow: 0px 10px 20px 0px #b7b7b78a;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        z-index: 9;
+
+        @media (min-width: 1200px) {
+            display: none !important;
+        }
+
+        @media (max-width: 1199px) and (min-width: 992px) {
+            display: none !important;
+        }
+
+        .menu-departamento {
+            h3 {
+                font-size: 14px;
+                margin: 0 0 2px;
+
+                a {
+                    color: #4f5264;
+                    text-decoration: none;
+                    transition: all .2s ease-out;
+                    display: block;
+                    padding: 10px 0;
+
+                    &:hover {
+                        color: #aaa9af;
+                    }
+                }
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+
+                li {
+                    line-height: 1.3;
+
+                    a {
+                        color: #4f5264;
+                        text-decoration: none;
+                        font-weight: 100;
+                        display: block;
+                        transition: all .2s ease-out;
+                        display: block;
+                        padding: 5px 0;
+
+                        &:hover {
+                            color: #aaa9af;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-account,
+        .header-orders,
+        .header-attendance {
+            margin: 0;
+            width: 100%;
+
+            a {
+                color: #4f5264;
+                text-decoration: none;
+                font-weight: 100;
+                display: block;
+                transition: all .2s ease-out;
+                display: block;
+                padding: 5px 0;
+                text-align: left;
+
+                &:before {
+                    display: none;
+                }
+
+                &:hover {
+                    color: #aaa9af;
+                }
+            }
+        }
+
+        .header-account {
+            border-top: #ccc 1px solid !important;
+        }
+    }
+}

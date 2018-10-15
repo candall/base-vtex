@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="en-us">
+
+<head>
+    <title>Candall</title>
+    <vtex:metaTags />
+    <vtex:template id="candall-new-tags" />
+    <!-- <meta name="google-site-verification" content="3Cwc7XPaNb0nxXSF-BYVX9idx7PQJYFkn8H8auOAGUo" /> -->
+</head>
+
+<body>
+    <vtex:template id="candall-new-header" />
+
+    <section>
+        <div class="candall-breadCrumb">
+            <div class="container">
+                <vtex.cmc:breadCrumb />
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="candall-placeholder-banner">
+                        <div class="hidden-sm hidden-xs">
+                            <vtex:contentPlaceHolder id="banner-frete-cupom" />
+                        </div>
+
+                        <div class="hidden-md hidden-lg">
+                            <vtex:contentPlaceHolder id="banner-frete-cupom-mobile" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="candall-placeholder-info">
+                        <div class="candall-placeholder-info-text">
+                            <vtex:contentPlaceHolder id="informacoes-texto" />
+                        </div>
+
+                        <div class="candall-placeholder-info-img">
+                            <vtex:contentPlaceHolder id="informacoes-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="candall-searchNavigator">
+                        <vtex.cmc:searchNavigator />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="candall-searchResult">
+                        <vtex.cmc:searchResult layout="63d2c5aa-d3a5-43a3-93a5-82a5c5feb04d" itemCount="12" columnCount="12" />
+                        <span class="candall-searchResult-loadProd">Ver mais produtos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <vtex:template id="candall-new-footer" />
+    <script src="/arquivos/QD_infinityScroll.min.js"></script>
+    <vtex:template id="candall-new-scripts" />
+</body>
+</html>

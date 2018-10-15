@@ -1,0 +1,360 @@
+body.home {
+    .slide-full-content,
+    .slider-mobile {
+        .box-banner {
+            overflow: hidden;
+            -webkit-transition: all 0.8s ease;
+            -moz-transition: all 0.8s ease;
+            -o-transition: all 0.8s ease;
+            -ms-transition: all 0.8s ease;
+            transition: all 0.8s ease;
+
+            a {
+                display: block;
+
+                img {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
+        }
+
+        .owl-nav {
+            display: none;
+        }
+
+        .owl-dots {
+            text-align: center;
+            margin: 15px 0;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                background: -moz-linear-gradient(top, #e8e8e8 0, hsla(0, 0%, 100%, 0) 100%);
+                background: -webkit-linear-gradient(top, #e8e8e8, hsla(0, 0%, 100%, 0));
+                background: linear-gradient(180deg, #e8e8e8 0, hsla(0, 0%, 100%, 0));
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8e8e8",endColorstr="#00ffffff",GradientType=0);
+                top: -15px;
+                left: 0;
+                width: 100%;
+                height: 170px;
+                z-index: -1;
+            }
+
+            .owl-dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background: #bfbfbf;
+                transition: all .2s ease-out;
+                display: inline-block;
+                margin: 0 5px;
+                outline: none;
+
+                &.active {
+                    background: #000000;
+                }
+
+                &:hover {
+                    background: #000000;
+                }
+            }
+        }
+    }
+
+    .slider-mobile {
+        .owl-dot {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    section {
+        .tip-bar-info {
+            position: relative;
+            z-index: 1;
+
+            .owl-item {
+                padding-left: 15px;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+
+            .owl-nav {
+                display: none;
+            }
+
+            .owl-dots {
+                text-align: center;
+                margin: 15px 0;
+                position: relative;
+
+                .owl-dot {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 100%;
+                    background: #bfbfbf;
+                    transition: all .2s ease-out;
+                    display: inline-block;
+                    margin: 0 5px;
+                    outline: none;
+
+                    &.active {
+                        background: #000000;
+                    }
+
+                    &:hover {
+                        background: #000000;
+                    }
+                }
+            }
+
+            .item {
+                width: 100%;
+
+                @media (max-width: 991px) {
+                    padding: 0;
+                }
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    background: #fff;
+                    box-shadow: 0 0 20px 0 #e0e0e0;
+                    border-radius: 4px;
+                }
+
+                .item-tip-bar {
+                    display: table;
+                    width: 100%;
+                    padding: 10px 8px;
+                    height: 69px;
+
+                    .item-tip-bar-icon {
+                        display: table-cell;
+                        vertical-align: middle;
+                        padding: 0;
+                        text-align: center;
+                        width: 60px;
+                    }
+
+                    .item-tip-bar-text {
+                        display: table-cell;
+                        vertical-align: middle;
+                        padding-left: 5px;
+
+                        h3 {
+                            margin: 0;
+                            font-size: 16px;
+                            color: #a3d02a;
+                            font-weight: 400;
+                            margin-bottom: 2px;
+                        }
+
+                        p {
+                            margin: 0;
+                            font-size: 13px;
+                            color: #919191;
+                            font-weight: 100;
+                            line-height: 1.2;
+                            word-break: break-all;
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner-control {
+            margin-bottom: 32px;
+        }
+
+        .shelf-simple-content {
+            margin-bottom: 16px;
+
+            .owl-dots {
+                display: none;
+            }
+
+            .owl-nav {
+                position: absolute;
+                width: 100%;
+                height: 0;
+                top: 40%;
+                z-index: 9;
+                display: block;
+                left: 0;
+
+                .owl-prev {
+                    width: 19px;
+                    height: 31px;
+                    float: left;
+                    background: url(/arquivos/setaesquerda01.png) center center no-repeat;
+                    color: transparent;
+                    margin-left: 0;
+                    outline: none;
+                }
+
+                .owl-next {
+                    width: 19px;
+                    height: 31px;
+                    float: right;
+                    background: url(/arquivos/setadireita01.png) center center no-repeat;
+                    color: transparent;
+                    margin-right: 0;
+                    outline: none;
+                }
+            }
+
+            .shelf-simple {
+                padding: 0 29px;
+                display: block !important;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        .shelf-spotlight-content {
+            margin: 55px 0 27px;
+
+            .shelf-spotlight-title {
+                h3 {
+                    color: #4a4a4a;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    float: left;
+                    margin: 0;
+                    margin-right: 20px;
+                    font-size: 34px;
+                    line-height: 1;
+
+                    span {
+                        font-weight: 300;
+                        display: block;
+
+                        strong {
+                            color: #0ec0c1;
+                        }
+                    }
+                }
+
+                p {
+                    float: left;
+                    color: #878787;
+                    height: 68px;
+                    position: relative;
+                    padding: 10px 0;
+                    padding-left: 15px;
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 1.2;
+                    letter-spacing: -1px;
+
+                    &:before {
+                        content: "";
+                        border-left: 1px solid #c5c5c5;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                    }
+                }
+
+                @media (max-width: 991px) {
+                    h3 {
+                        float: none;
+                        display: block;
+                        text-align: center;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    p {
+                        float: none;
+                        display: block;
+                        text-align: center;
+
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .shelf-spotlight {
+                padding: 0 29px;
+                display: block !important;
+            }
+
+            .owl-dots {
+                display: none;
+            }
+
+            .owl-nav {
+                position: absolute;
+                width: 100%;
+                height: 0;
+                top: 40%;
+                z-index: 9;
+                display: block;
+                left: 0;
+
+                .owl-prev {
+                    width: 19px;
+                    height: 31px;
+                    float: left;
+                    background: url(/arquivos/setaesquerda01.png) center center no-repeat;
+                    color: transparent;
+                    margin-left: 0;
+                    outline: none;
+                }
+
+                .owl-next {
+                    width: 19px;
+                    height: 31px;
+                    float: right;
+                    background: url(/arquivos/setadireita01.png) center center no-repeat;
+                    color: transparent;
+                    margin-right: 0;
+                    outline: none;
+                }
+            }
+
+            .owl-item {
+                position: relative;
+
+                .shlef-title,
+                .shelf-price,
+                .shelf-link {
+                    opacity: 0;
+                }
+
+                .shelf-product-image {
+                    width: 75%;
+                    margin: 0 auto;
+                    opacity: 0.6;
+                    margin-top: 60px;
+                    margin-bottom: 10px;
+                }
+
+                &.center {
+                    .shlef-title,
+                    .shelf-price,
+                    .shelf-link {
+                        opacity: 1;
+                    }
+
+                    .shelf-product-image {
+                        width: 100%;
+                        opacity: 1;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

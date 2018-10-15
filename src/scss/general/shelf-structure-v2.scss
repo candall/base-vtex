@@ -1,0 +1,64 @@
+.shelf-structure-v2 {
+    text-align: center;
+
+    .shelf-product-image {
+        display: block;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .shlef-title {
+        margin: 0;
+
+        a {
+            display: block;
+            font-weight: 300;
+            font-size: 23px;
+            letter-spacing: -1px;
+            color: #292929;
+            text-decoration: none;
+            max-height: 50px;
+            overflow: hidden;
+            margin-bottom: 2px;
+        }
+    }
+
+    .shelf-price {
+        margin: 0 0 4px;
+
+        a {
+            text-decoration: none;
+            color: #292929;
+            display: block;
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: -0.6px;
+
+            .bestPrice {
+                display: block;
+                font-size: 15px;
+                margin-top: -2px;
+                color: #484848;
+
+                strong {
+                    font-weight: 500;
+                }
+            }
+
+            .installment {
+                display: block;
+            }
+        }
+    }
+
+    .shelf-link {
+        color: #15c2c3;
+        font-weight: 300;
+        font-size: 16px;
+        text-decoration: none;
+    }
+}

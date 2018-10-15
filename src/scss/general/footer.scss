@@ -1,0 +1,278 @@
+footer {
+    margin-top: 80px;
+
+    .footer-newsletter {
+        border-top: solid 1px #e8e8e8;
+        padding: 35px 0 10px;
+
+        .footer-newsletter-text {
+            h3 {
+                color: #4a4a4a;
+                font-weight: 100;
+                text-transform: uppercase;
+                float: left;
+                margin: 0;
+                font-size: 29px;
+                line-height: 1;
+                letter-spacing: -.5px;
+                width: 45%;
+
+                @media (max-width: 768px) {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                strong {
+                    font-weight: 500;
+                    font-size: 23px;
+                    letter-spacing: 0.3px;
+                }
+            }
+
+            p {
+                float: left;
+                color: #878787;
+                height: 68px;
+                position: relative;
+                padding: 8px 0;
+                padding-left: 16px;
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 1.2;
+                letter-spacing: -1px;
+                width: 50%;
+
+                @media (max-width: 768px) {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    height: auto;
+                }
+
+                &:before {
+                    content: "";
+                    border-left: 1px solid #c5c5c5;
+                    position: absolute;
+                    left: 0;
+                    top: -5px;
+                    height: 104%;
+
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .footer-newsletter-form {
+            margin-top: -7px;
+            min-height: 100px;
+
+            h3,
+            fieldset > p {
+                display: none;
+            }
+
+            label {
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            #newsletterClientName,
+            #newsletterClientEmail {
+                max-width: 234px;
+                width: 100%;
+                border: none;
+                border-bottom: solid 1px #000;
+                font-size: 15px;
+                font-weight: 300;
+                padding: 3px 9px;
+                margin-bottom: 21px;
+                outline: none;
+
+                @media (max-width: 991px) {
+                    display: block;
+                    max-width: 100%;
+                }
+            }
+
+            #newsletterButtonOK {
+                max-width: 158px;
+                width: 100%;
+                height: 40px;
+                background: url(/arquivos/text-newsletter-input.png) no-repeat 50% transparent;
+                border: 1px solid #0ec0c1;
+                border-radius: 4px;
+                font-size: 0;
+                cursor: pointer;
+                position: relative;
+                top: -10px;
+                margin-left: 22px;
+
+                @media (max-width: 991px) {
+                    display: block;
+                    max-width: 100%;
+                    top: 0;
+                    margin: 0;
+                }
+
+                @media (min-width: 992px) and (max-width: 1200px) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .footer-links-content {
+        background: #f2f2f2;
+
+        .footer-links {
+            padding-right: 15px;
+            padding-left: 15px;
+
+            > .row > div {
+                margin: 0;
+                padding: 0;
+            }
+
+            .footer-links-contato,
+            .footer-links-institucional,
+            .footer-links-ajuda,
+            .footer-links-seguranca {
+                width: 50%;
+                float: left;
+                border-left: solid 1px #e9e9e9;
+                min-height: 200px;
+                padding: 25px 30px;
+                padding-right: 10px;
+
+                @media (max-width: 1200px) {
+                    border: none !important;
+                    min-height: auto;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 0;
+                }
+
+                h3 {
+                    font-size: 14px;
+                    margin: 0 0 5px;
+                    color: #4f5264;
+                }
+
+                a {
+                    color: #4f5264;
+                    text-decoration: none;
+                    font-weight: 100;
+                    display: block;
+                    transition: all .2s ease-out;
+                    word-break: break-all;
+
+                    &:hover {
+                        color: #aaa9af;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    word-break: break-all;
+                }
+
+                ul {
+                    padding: 0;
+                    list-style-type: none;
+
+                    li {
+                        line-height: 1.3;
+                    }
+                }
+            }
+
+            .footer-links-contato {
+                border: none;
+                padding: 25px 0;
+            }
+
+            .footer-links-seguranca {
+                border-right: 1px solid #e9e9e9;
+            }
+        }
+    }
+
+    .footer-info-payments {
+        padding: 27px 0;
+
+        @media (max-width: 992px) {
+            overflow: auto;
+        }
+
+        h3 {
+            font-size: 14px;
+            margin: 0 0 2px;
+            color: #4f5264;
+        }
+
+        p {
+            font-size: 12px;
+            color: #4f5264;
+            margin-bottom: 2px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .footer-info-payments-cartao {
+            margin-bottom: 18px;
+        }
+
+        .footer-info-payments-boleto {
+            float: left;
+            width: 30%;
+        }
+
+        .footer-info-payments-debito {
+            float: left;
+            width: 70%;
+        }
+    }
+
+    .footer-info {
+        width: 50%;
+        float: left;
+        margin-top: 23px;
+        line-height: 1.3;
+
+        @media (max-width: 991px) {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .footer-logos {
+        width: 50%;
+        float: right;
+        text-align: right;
+        margin-top: 10px;
+
+        @media (max-width: 991px) {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        img {
+            margin-top: 20px;
+
+            &:first-child {
+                margin-right: 17px;
+            }
+        }
+    }
+}

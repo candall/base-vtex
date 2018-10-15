@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="en-us">
+
+<head>
+    <title>Candall</title>
+    <vtex:metaTags />
+    <vtex:template id="candall-new-tags" />
+
+    <!-- <meta name="google-site-verification" content="3Cwc7XPaNb0nxXSF-BYVX9idx7PQJYFkn8H8auOAGUo" /> -->
+</head>
+
+<body>
+    <vtex:template id="candall-new-header" />
+
+    <figure>
+        <div class="slide-full-content">
+            <div class="slide-desktop hidden-sm hidden-xs owl-carousel">
+                <vtex:contentPlaceHolder id="slide-principal" />
+            </div>
+
+            <div class="slider-mobile hidden-md hidden-lg owl-carousel">
+                <vtex:contentPlaceHolder id="slide-principal-mobile" />
+            </div>
+        </div>
+    </figure>
+
+    <section>
+        <div class="container">
+            <div class="tip-bar-info owl-carousel">
+                <vtex:contentPlaceHolder id="informativo" />
+            </div>
+
+            <div class="shelf-spotlight-content">
+                <div class="clearfix shelf-spotlight-title">
+                    <h3>Destaques <span>Do<strong>Mês</strong></span></h3>
+                    <p class="sub"> O que nos diferencia. <br /> Mais do que "cadeiras", mas do que "sentar". </p>
+                </div>
+
+                <div class="shelf-spotlight shelf-carousel owl-carousel clearfix">
+                    <vtex:contentPlaceHolder id="prateleira-destaque-do-mes" />
+                </div>
+            </div>
+
+            <div class="banner-control">
+                <div class="hidden-sm hidden-xs">
+                    <vtex:contentPlaceHolder id="banner-control-1-desktop" />
+                </div>
+
+                <div class="hidden-md hidden-lg">
+                    <vtex:contentPlaceHolder id="banner-control-1-mobile" />
+                </div>
+            </div>
+
+            <div class="shelf-simple-content">
+                <h3>
+                    <vtex:contentPlaceHolder id="titulo-prateleira-01" />
+                </h3>
+
+                <div class="shelf-simple shelf-carousel owl-carousel clearfix">
+                    <vtex:contentPlaceHolder id="prateleira-01" />
+                </div>
+            </div>
+
+            <div class="banner-control">
+                <div class="hidden-sm hidden-xs">
+                    <vtex:contentPlaceHolder id="banner-control-2-desktop" />
+                </div>
+
+                <div class="hidden-md hidden-lg">
+                    <vtex:contentPlaceHolder id="banner-control-2-mobile" />
+                </div>
+            </div>
+
+            <div class="shelf-simple-content">
+                <h3>
+                    <vtex:contentPlaceHolder id="titulo-prateleira-02" />
+                </h3>
+
+                <div class="shelf-simple shelf-carousel owl-carousel clearfix">
+                    <vtex:contentPlaceHolder id="prateleira-02" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <vtex:template id="candall-new-footer" />
+</body>
+
+<vtex:template id="candall-new-scripts" />
+
+</html>

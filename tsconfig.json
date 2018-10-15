@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "module": "es6",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "lib": [
+            "dom",
+            "es2015.promise",
+            "es5"
+        ],
+        "experimentalDecorators": true
+    }
+}
